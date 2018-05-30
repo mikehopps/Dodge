@@ -19,11 +19,12 @@ public class Main extends JPanel implements ActionListener, KeyListener{
 
     public Main(int w, int h) {
         setSize(w, h);
+        keys = new boolean[256];
+
         timer = new Timer(1000/60, this);
         timer.start();
         addKeyListener(this);
         player = new Player(getWidth()/2, getHeight()/2);
-        keys = new boolean[256];
     }
 
     @Override

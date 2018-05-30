@@ -33,7 +33,7 @@ public class Player {
             dy = dy / Math.sqrt(2);
             dx = dx / Math.sqrt(2);
         }
-        double speed = 5;
+        double speed = 20;
         move(dx*speed, dy*speed);
 
     }
